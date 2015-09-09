@@ -2,14 +2,16 @@
 $_order = new Mage_Sales_Model_Order(); //object to get all order information
 $orderId = Mage::getSingleton('checkout/session')->getLastRealOrderId();
 $account = $this->helper("paymentgateway")->getAccountEmail();
+$returnTo = $this->helper("paymentgateway")->getReturnUrl();
 
 $_order->loadByIncrementId($orderId);
 $_cgiurl = $this->helper("paymentgateway")->getPaymentmethodPaymentgatewayurl();
 ?>
-<form name="mygatewayform" method="post" action="<?php echo $_cgiurl;?>">
+<form name="mygatewayform" method="post"   action="<?php echo $_cgiurl;?>">
     <input type="hidden" name="orderid"    value="<?php echo $orderId; ?>">
     <input type="hidden" name="grandtotal" value="<?php echo $_order->getBaseGrandTotal(); ?>">
     <input type="hidden" name="account"    value="<?php echo $account; ?>">
+    <input type="hidden" name="returnTo"   value="<?php echo $returnTo; ?>">
 </form>
 <script type="text/javascript">
 document.mygatewayform.submit();

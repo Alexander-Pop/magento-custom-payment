@@ -12,6 +12,10 @@ public function getAccountEmail()
 {
 	return Mage::getStoreConfig("payment/paymentgateway/account_email");
 }
-   
+
+public function getReturnUrl()
+{
+	return $_SERVER['HTTP_HOST'].'/customer/account/';
+}  
     
 }
