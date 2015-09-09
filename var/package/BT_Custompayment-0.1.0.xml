@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<package>
+    <name>BT_Custompayment</name>
+    <version>0.1.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">Open Source Licence (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>This extension adds a new payment method. </summary>
+    <description>Custom Payment Method&#xD;
+&#xD;
+This extension will help you to add your own payment method without changing any core files .&#xD;
+&#xD;
+This extension is very helpful for developers and merchants.&#xD;
+&#xD;
+Features:&#xD;
+&#xD;
+    No core file changed.&#xD;
+    A small useful extension for payment.&#xD;
+    Works on Magento 1.6 and above.&#xD;
+&#xD;
+Supported Features:&#xD;
+&#xD;
+    Admin&#xD;
+    go to System-&gt;Configuration-&gt;Sales-&gt;Payment Method-&gt;BT Payment Module now you can enable/disable this extension from admin.&#xD;
+    &#xD;
+    A new payment method is displayed automatically at the time of checkout on payment page.&#xD;
+&#xD;
+&#xD;
+&#xD;
+Installation:&#xD;
+&#xD;
+    Install Extension Using Magento Connect&#xD;
+    Enable it from admin&#xD;
+&#xD;
+&#xD;
+&#xD;
+Contact Us&#xD;
+&#xD;
+For any assistance, please emails us at pramodgupta.bt@gmail.com&#xD;
+&#xD;
+Give us your valueable feedbacks to improve this extension, we will surely consider your feedback in the next release version of the extension</description>
+    <notes>This extension adds a new payment method on checkout page. it is very useful for developer to understand the payment module. &#xD;
+</notes>
+    <authors><author><name>BluethinkIT</name><user>Bluethink</user><email>pramodgupta.bt@gmail.com</email></author></authors>
+    <date>2014-08-20</date>
+    <time>19:46:18</time>
+    <contents><target name="magecommunity"><dir name="BT"><dir name="Custompayment"><dir name="Helper"><file name="Data.php" hash="110ad8034b6e498652e199407b19bd78"/></dir><dir name="Model"><file name="Custompayment.php" hash="e4bfe2884f8923e8c254128b8551ab56"/></dir><dir name="etc"><file name="config.xml" hash="2b8f3d01cbda0838383bd2cf2e2f4ca6"/><file name="system.xml" hash="76c24b295cdc997c66312174d89cab4e"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="BT_Custompayment.xml" hash="938ab406b8e373bc46e4d730b7e62a3e"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
