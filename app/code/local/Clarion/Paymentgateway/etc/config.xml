@@ -71,9 +71,10 @@
       <paymentgateway>
         <model>paymentgateway/standard</model>
         <active>1</active>
-	    <cgi_url>https://secure.authorize.net/gateway/transact.dll</cgi_url>
+	    <cgi_url>http://localhost:9000/api/order_requests</cgi_url>
+        <account_email>magentoshop@alpha.com</account_email>
         <order_status>pending</order_status>
-        <title>Custom Payment Gateway</title>
+        <title>CegekaPay Gateway</title>
         <payment_action>redirect</payment_action>
         <allowspecific>0</allowspecific>
         <sort_order>1</sort_order>
