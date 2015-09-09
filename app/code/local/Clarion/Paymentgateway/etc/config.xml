@@ -72,7 +72,7 @@
         <model>paymentgateway/standard</model>
         <active>1</active>
 	    <cgi_url>http://localhost:9000/api/order_requests</cgi_url>
-        <account_email>magentoshop@alpha.com</account_email>
+        <account_email>alice@alpha.com'</account_email>
         <order_status>pending</order_status>
         <title>CegekaPay Gateway</title>
         <payment_action>redirect</payment_action>
