@@ -4,24 +4,22 @@
    
    
     // redirect action method 
-	  public function redirectAction() {
+	public function redirectAction() 
+    {
 	    $this->loadLayout();
         $block = $this->getLayout()->createBlock('Mage_Core_Block_Template','paymentgatewaytemplate',array('template' => 'paymentgatewaytemplate/redirect.phtml'));
 		$this->getLayout()->getBlock('content')->append($block);
         $this->renderLayout();
 	}
-
-  	
 	
-	  public function  successAction()
+	public function  successAction()
     {
         $this->_redirect('checkout/onepage/success', array('_secure'=>true));
     }
-	
-	
 		
 	// cancel action will hit when some one cancel the order and state changes to canceled	
-	 public function cancelAction() {
+	public function cancelAction() 
+    {
         if (Mage::getSingleton('checkout/session')->getLastRealOrderId()) {
             $order = Mage::getModel('sales/order')->loadByIncrementId(Mage::getSingleton('checkout/session')->getLastRealOrderId());
             if($order->getId()) {

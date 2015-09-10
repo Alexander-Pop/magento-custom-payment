@@ -15,7 +15,12 @@ public function getAccountEmail()
 
 public function getReturnUrl()
 {
-	return 'http://'.$_SERVER['HTTP_HOST'].'/customer/account/';
-}  
+	return Mage::getUrl("checkout/onepage/success");
+}
+
+public function getCancelUrl()
+{
+	return Mage::getUrl("checkout/onepage/failure");
+}
     
 }

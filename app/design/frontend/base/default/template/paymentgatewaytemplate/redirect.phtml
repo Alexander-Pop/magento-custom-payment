@@ -2,7 +2,9 @@
 $_order = new Mage_Sales_Model_Order(); //object to get all order information
 $orderId = Mage::getSingleton('checkout/session')->getLastRealOrderId();
 $account = $this->helper("paymentgateway")->getAccountEmail();
-$returnTo = $this->helper("paymentgateway")->getReturnUrl();
+
+$successUrl =  $this->helper("paymentgateway")->getReturnUrl();
+$cancelUrl  = $this->helper("paymentgateway")->getCancelUrl();
 
 $_order->loadByIncrementId($orderId);
 $_cgiurl = $this->helper("paymentgateway")->getPaymentmethodPaymentgatewayurl();
@@ -11,7 +13,8 @@ $_cgiurl = $this->helper("paymentgateway")->getPaymentmethodPaymentgatewayurl();
     <input type="hidden" name="orderid"    value="<?php echo $orderId; ?>">
     <input type="hidden" name="grandtotal" value="<?php echo $_order->getBaseGrandTotal(); ?>">
     <input type="hidden" name="account"    value="<?php echo $account; ?>">
-    <input type="hidden" name="returnTo"   value="<?php echo $returnTo; ?>">
+    <input type="hidden" name="successUrl" value="<?php echo $successUrl; ?>">
+    <input type="hidden" name="cancelUrl"  value="<?php echo $cancelUrl; ?>">
 </form>
 <script type="text/javascript">
 document.mygatewayform.submit();
