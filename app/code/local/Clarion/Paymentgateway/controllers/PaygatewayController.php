@@ -1,8 +1,6 @@
 <?php
  class Clarion_Paymentgateway_PaygatewayController extends Mage_Core_Controller_Front_Action
 {
-   
-   
     // redirect action method 
 	public function redirectAction() 
     {
@@ -17,7 +15,7 @@
         $this->_redirect('checkout/onepage/success', array('_secure'=>true));
     }
 		
-	// cancel action will hit when some one cancel the order and state changes to canceled	
+	// cancel action will hit when someone cancels the order and state changes to canceled	
 	public function cancelAction() 
     {
         if (Mage::getSingleton('checkout/session')->getLastRealOrderId()) {
