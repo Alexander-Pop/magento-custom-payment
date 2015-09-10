@@ -15,7 +15,7 @@ public function getAccountEmail()
 
 public function getReturnUrl()
 {
-	return $_SERVER['HTTP_HOST'].'/customer/account/';
+	return 'http://'.$_SERVER['HTTP_HOST'].'/customer/account/';
 }  
     
 }
