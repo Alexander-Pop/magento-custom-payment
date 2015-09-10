@@ -15,12 +15,12 @@ public function getAccountEmail()
 
 public function getReturnUrl()
 {
-	return Mage::getUrl("checkout/onepage/success");
+	return Mage::getUrl("payget/paygateway/success");
 }
 
 public function getCancelUrl()
 {
-	return Mage::getUrl("checkout/onepage/failure");
+	return Mage::getUrl("payget/paygateway/cancel");
 }
     
 }
