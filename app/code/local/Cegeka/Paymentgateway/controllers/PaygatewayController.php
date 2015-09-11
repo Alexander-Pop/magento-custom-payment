@@ -1,5 +1,5 @@
 <?php
- class Clarion_Paymentgateway_PaygatewayController extends Mage_Core_Controller_Front_Action
+ class Cegeka_Paymentgateway_PaygatewayController extends Mage_Core_Controller_Front_Action
 {
     // redirect action method 
 	public function redirectAction() 

@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <config>
     <modules>
-        <Clarion_Paymentgateway>
+        <Cegeka_Paymentgateway>
             <version>0.1.4</version>
-        </Clarion_Paymentgateway>
+        </Cegeka_Paymentgateway>
     </modules>
 
 	  <frontend>
@@ -11,7 +11,7 @@
             <paymentgateway>
                 <use>standard</use>
                 <args>
-                    <module>Clarion_Paymentgateway</module>
+                    <module>Cegeka_Paymentgateway</module>
                     <frontName>payget</frontName>
                 </args>
             </paymentgateway>
@@ -49,18 +49,18 @@
     <global>
 	   <models>
 	    <paymentgateway>
-		  <class>Clarion_Paymentgateway_Model</class>
+		  <class>Cegeka_Paymentgateway_Model</class>
 	    </paymentgateway>
 	   </models>
 	   <blocks>
 	      <paymentgateway>
-		  	<class>Clarion_Paymentgateway_Block</class>
+		  	<class>Cegeka_Paymentgateway_Block</class>
 		  </paymentgateway>
 	   </blocks>
         
 		<helpers>
 		<paymentgateway>
-		<class>Clarion_Paymentgateway_Helper</class>
+		<class>Cegeka_Paymentgateway_Helper</class>
 		</paymentgateway>
 		</helpers>
 	

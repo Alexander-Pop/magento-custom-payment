@@ -1,6 +1,6 @@
 <?php
 
-class Clarion_Paymentgateway_Model_Standard extends Mage_Payment_Model_Method_Abstract
+class Cegeka_Paymentgateway_Model_Standard extends Mage_Payment_Model_Method_Abstract
 {
 
      /*new added payment method code define here*/

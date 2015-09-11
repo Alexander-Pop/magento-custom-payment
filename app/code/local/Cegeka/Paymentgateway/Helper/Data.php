@@ -1,6 +1,6 @@
 <?php
 
-class Clarion_Paymentgateway_Helper_Data extends Mage_Core_Helper_Abstract
+class Cegeka_Paymentgateway_Helper_Data extends Mage_Core_Helper_Abstract
 {
 
 public function getPaymentmethodPaymentgatewayurl()

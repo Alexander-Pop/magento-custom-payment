@@ -21,9 +21,9 @@
 -->
 <config>
     <modules>
-        <Clarion_Paymentgateway>
+        <Cegeka_Paymentgateway>
             <active>true</active>
             <codePool>local</codePool>
-        </Clarion_Paymentgateway>
+        </Cegeka_Paymentgateway>
     </modules>
 </config>

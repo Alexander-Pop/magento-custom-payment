@@ -1,5 +1,5 @@
 <?php
- class Clarion_Paymentgateway_IndexController extends Mage_Core_Controller_Front_Action
+ class Cegeka_Paymentgateway_IndexController extends Mage_Core_Controller_Front_Action
 {
    
    

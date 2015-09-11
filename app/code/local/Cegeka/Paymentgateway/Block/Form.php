@@ -1,6 +1,6 @@
 <?php
 
-class Clarion_Paymentgateway_Block_Form extends Mage_Payment_Block_Form
+class Cegeka_Paymentgateway_Block_Form extends Mage_Payment_Block_Form
 {
     protected function _construct()
     {
