@@ -23,9 +23,11 @@
             if($order->getId()) {
 				// Flag the order as 'cancelled' and save it
 				$order->cancel()->setState(Mage_Sales_Model_Order::STATE_CANCELED, true, 'Gateway has declined the payment.')->save();
+				
 			}
         }
+        
+        $this->_redirect('checkout/onepage/failure', array('_secure'=>true));
 	}
-	
 }
 ?>
